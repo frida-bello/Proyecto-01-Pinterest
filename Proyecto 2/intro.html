@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css" href="main.js"> 
+    <link rel="icon" href="LOgo.jpg">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>¡Bienvenido a MONEYHOME!</h1>
+    <img src="LOgo.jpg" alt="">
+
+    <div id="accion-boton">
+        <button type="button" id="consulta" onclick="mostrarContenedor('consultar')">Consultar Saldo</button>
+        <button type="button" id="ingresos" onclick="mostrarContenedor('ingreso')">Ingresar</button>
+        <button type="button" id="egresos" onclick="mostrarContenedor('retiro')">Retirar</button>
+    </div>
+
+    <div class="consultar-saldo contenedor" id="consultar">
+        <h2>Saldo Disponible:</h2>
+        <h2 class="saldo"> $0 </h2>
+        <button type="button" onclick="regresarInicio('consultar')">Regresar</button>
+
+    </div>
+
+    <div class="ingresar-saldo contenedor" id="ingreso">
+        <h2>Ingresar Saldo</h2>
+        <input type="number" name="input-ingresarsaldo" id="input-ingresarsaldo">
+        <button type="button" id="se-ingreso" onclick="guardar()">Ingresar</button>
+
+        <article class="ejecutacion">
+            <h2>Se han ingresado</h2>
+            <p class="cantidad-ingresada">$0</p>
+
+            <h2>Su saldo ahora es de: </h2>
+            <p class="saldo" id="saldo-actualizado">$0</p>
+
+        </article>
+        <button type="button" onclick="regresarInicio('ingreso')">Regresar</button>
+
+    </div>
+
+    <div class="retirar-saldo contenedor" id="retiro">
+        <h2>Retirar Saldo</h2>
+        <input type="number" name="input-retirarsaldo" id="input-retirarsaldo">
+        <button type="button" id="botonRetirar" onclick="retirado()">Retirar</button>
+
+        <article class="ejecutacion">
+            <h2>Se han retirado</h2>
+            <p class="cantidad-retirada">$0</p>
+
+            <h2>Su saldo ahora es de: </h2>
+            <p class="saldo" id="saldo-actualizado">$0</p>
+
+        </article>
+        <button type="button" onclick="regresarInicio('retiro')">Regresar</button>
+
+    </div>
+
+    
+</body>
+<script src="intro.js"></script>
+<script src="main.js"></script>
+</html>

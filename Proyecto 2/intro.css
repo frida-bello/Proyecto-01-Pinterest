@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(to bottom, rgb(255, 123, 0), white );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+}
+
+h1{
+    color: black;
+}
+
+div{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    background: rgb(255, 156, 42);
+    padding: 8px;
+    border-radius:15px;
+    cursor: pointer;
+    padding: 12px;
+    margin: 10px;
+}
+
+.consultar-saldo {
+    border: 2px solid black;
+    outline: rgb(255, 132, 0) solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: black;
+    border: 1px solid orangered;
+}
+
+.ingresar-saldo{
+    border: 2px solid black;
+    outline: rgb(255, 132, 0) solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.retirar-saldo{
+    border: 2px solid black;
+    outline: rgb(255, 132, 0) solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.contenedor{
+    display: none;
+}
+
+

@@ -1,0 +1,51 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 123, 0), white );
+}
+
+img{
+    width: 200px ;
+    margin-bottom: 10px;
+}
+
+
+.login-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: black;
+    border: 1px solid orangered;
+}
+
+button{
+    background: rgb(255, 136, 0);
+    border: none;
+    padding: 8px;
+    border-radius:15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orange;
+}
